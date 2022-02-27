@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+         #navbar{
+            width: 100%;
+            height: 125px;
+            background-color: #2e8b57;
+            /* border: solid 1px green; */
+          
+           
+        }
+        /* #navbar > div {
+            width: 100%;
+            height: 60px;
+            border: solid 1px red;
+           
+        } */
+        #topnav{
+             width: 100%;
+            height: 60px;
+            /* border: solid 1px red; */
+            display: flex;
+
+        }
+        #topnav > img:nth-child(1){
+            width: 150px;
+            height: 60px;
+            padding-right: 20px;
+            /* border: solid 1px blue ; */
+        }
+       
+         #add_searchbar > input{
+           width: 250px;
+           height: 40px;
+           font-size: 17px;
+           text-align: center;
+           border-radius: 5px;
+           margin-top: 10px;
+
+        } 
+      
+         #cartbar > input{
+           width: 600px;
+           height: 40px;
+           font-size: 20px;
+           border-radius: 5px;
+           margin-top: 10px;
+        } 
+        #topnav > a > img{
+            width: 40px;
+            height: 40px; 
+            margin-top: 10px;
+           }
+         #bottomnav{
+              width: 95%;
+              height: 60px;
+              /* border: solid 1px yellow; */
+             display: flex;
+              justify-content: space-between;
+              margin-left: 12%;
+             }
+             #bottomnav_left {
+                 width: 700px;
+                 /* border: 1px solid red; */
+                 padding-top:23px ;
+                 display: grid;
+                 grid-template-columns:repeat(4,1fr) ;
+                 grid-template-rows:auto;
+                 font-size: 21px;
+                 color: white;
+                 text-align: center;
+             }
+             #bottomnav_right {
+                 padding-right:100px ;
+                 width: 250px;
+                 /* border: 1px solid red; */
+                 display: grid;
+                 padding-top:20px ;
+                 grid-template-columns:repeat(3,1fr) ;
+                 grid-template-rows:auto;
+                 font-size: 25px;
+                 color: white;
+                 text-align: center;
+             }
         #dettol_prod{
             width: 80%;
             display: grid;
@@ -13,6 +94,7 @@
             grid-template-rows: 350px ;
             gap: 15px;
             margin: auto;
+            margin-top: 30px;
         }
         #dettol_prod > div {
          border: 1px solid green;
@@ -30,7 +112,7 @@
         h3{
             text-align: center;
             margin-top: 40px;
-            margin-top: 70px;
+            margin-top: 50px;
         }
         #prod_page_bottom{
           width: 60%;
@@ -44,16 +126,45 @@
         }
         .prod_page_bottom_1{
             border-radius: 10px;
-           border: 1px solid red;
+           /* border: 1px solid grey; */
           
         }
     </style>
 </head>
 <body>
+    <div id="navbar">
+        <div id="topnav">
+           
+               <img src="https://aniportalimages.s3.amazonaws.com/media/details/Pharmeasy_april5.jpg" alt="">
+         
+         
+           <div id="add_searchbar">
+             <input type="text" placeholder="Deliver to 234226, Patna" id="textsearch" />
+              </div>
+              <div id="cartbar">
+               <input type="text" placeholder="Search medicine/Healthcare products @18% off" id="textsearch" />
+                </div>
+              <a target="_blank" href="product_page.html"><img id="img_searchicon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS63SKA-wL_NPMScjBr5Tw3r7d4XBhwstmQuA&usqp=CAU" alt="submit" id="searchicon" />
+</a>  
+        </div>
+        <div id="bottomnav">
+            <div id="bottomnav_left">
+                <div>Order Medicines</div>
+                <div>Healthcare Products</div>
+                <div>Lab Tests</div>
+                <div>RTPCR</div>
+               </div>
+               <div id="bottomnav_right">
+                <div>Offers</div>
+                <div>User</div>
+                <div>Cart</div>
+               </div>
+            </div>
+          </div>
     <div id="dettol_prod">
-        <div class="A">
-            <img src="https://pharmeasy.in/_next/image?url" alt="">
-             <h3>Dettol D95 Mask Anti Virus Reusable & Washable Black...</h3>
+        <div class="A"> <img src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FL48751%2Fdettol-d95-mask-anti-virus-reusable-washable-black-small-2-1641790937.jpg&w=256&q=75" alt="">
+           <a target="_blank" href="payment.html">
+            <h3>Dettol D95 Mask Anti Virus Reusable & Washable Black...</h3></a>
           </div>
 
         <div class="A">
@@ -63,7 +174,7 @@
 
         <div class="A">
             <img src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FQ82769%2Fdettol-liquid-disinfectant-cleaner-surface-sanitizer-spray-500ml-2-1641789869.jpg&w=256&q=75" alt="">
-             <h3>Dettol Liquid Disinfectant Cleaner Surface Sanitizer Spray 500ml</h3>
+          <a target="_blank" href="payment.html">   <h3>Dettol Liquid Disinfectant Cleaner Surface Sanitizer Spray 500ml</h3></a>   
         </div>
 
         <div class="A">
@@ -232,7 +343,7 @@
 
         <div class="A">
             <img src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FR98891%2Fdettol-liquid-disinfectant-for-floor-cleaner-surface-disinfection-lavender-blossom-1l-2-1641790662.jpg&w=256&q=75" alt="">
-            <h3></h3>
+            <h3>Dettol Skincare Bathing Soap Bar 125gm Each, Buy 4 Get 1 Free</h3>
         </div>
 
         <div class="A">
@@ -309,4 +420,16 @@
 
     </div>
 </body>
-</html>
+</html> 
+
+<script>
+
+
+
+
+
+
+    
+</script>
+
+
